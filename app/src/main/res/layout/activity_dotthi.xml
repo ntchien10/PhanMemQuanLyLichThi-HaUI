@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.taodotthi.DotThiController"
+    android:scrollbars="horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bậc đào tạo" />
+
+            <Spinner
+                android:id="@+id/spnBac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:spinnerMode="dropdown" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Khóa:" />
+
+            <Spinner
+                android:id="@+id/spnKhoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:spinnerMode="dropdown" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Học kỳ" />
+            <Spinner
+                android:id="@+id/spnHocKi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ngày bắt đầu" />
+
+            <EditText
+                android:id="@+id/txtNgayBatDau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="datetime"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/btnDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/calender_black"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày kết thúc"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/txtNgayKetThuc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="date"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/btnDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender_black"
+                android:layout_weight="1"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="12sp"-->
+    <!--        android:gravity="center|center_horizontal">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnThem"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="4sp"-->
+    <!--            android:layout_marginRight="4sp"-->
+    <!--            android:text="Thêm" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnSua"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="4sp"-->
+    <!--            android:layout_marginRight="4sp"-->
+    <!--            android:text="Sửa" />-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnDong"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="4sp"-->
+    <!--            android:layout_marginRight="10sp"-->
+    <!--            android:text="Đóng" />-->
+
+    <!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/textShow"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:background="@color/purple_200"
+        android:gravity="left|center_vertical"
+        android:text="Danh sách các đợt thi"
+        android:textColor="#000" />
+
+    <ListView
+        android:id="@+id/listViewDotThi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.trangchu.TrangChuController">
+
+    <Button
+        android:id="@+id/btnMonThi_TrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QL Môn thi"
+        android:textSize="20sp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#FF3300"
+        android:backgroundTint="#FFCC00"/>
+
+    <Button
+        android:id="@+id/btnPhongThi_TrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QL Phòng thi"
+        android:textSize="20sp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF3300"
+        android:backgroundTint="#FFCC00"/>
+
+    <Button
+        android:id="@+id/btnCanBo_TrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QL Cán bộ coi thi"
+        android:textSize="20sp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF3300"
+        android:backgroundTint="#FFCC00"/>
+
+    <Button
+        android:id="@+id/btnTaoDotThi_TrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đợt thi"
+        android:textSize="20sp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF3300"
+        android:backgroundTint="#FFCC00"/>
+
+    <Button
+        android:id="@+id/btnTaiKhoan_TrangChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QL Tài khoản"
+        android:textSize="20sp"
+        android:paddingVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF3300"
+        android:backgroundTint="#FFCC00"/>
+
+</LinearLayout>

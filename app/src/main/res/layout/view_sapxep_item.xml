@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tv_sapxep_MaHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã học phần"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_sapxep_TenHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên học phần"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_sapxep_PhongThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng thi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_MaHP" />
+
+    <TextView
+        android:id="@+id/tv_sapxep_CaThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ca thi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_TenHP" />
+
+    <TextView
+        android:id="@+id/tv_sapxep_GVcoiThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GV Coi thi:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_PhongThi" />
+    <TextView
+        android:id="@+id/tv_sapxep_NgayThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng thi"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_CaThi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

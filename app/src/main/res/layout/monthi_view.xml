@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutchoose"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_bacdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bậc đào tạo: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_kihoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kì học: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bacdt" />
+    <TextView
+        android:id="@+id/tv_khoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khóa: "
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bacdt" />
+
+    <TextView
+        android:id="@+id/tv_MaHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã HP:"
+        app:layout_constraintTop_toBottomOf="@id/tv_kihoc"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_tenHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên HP:"
+        app:layout_constraintTop_toBottomOf="@id/tv_kihoc"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tv_soTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số TC:"
+        app:layout_constraintTop_toBottomOf="@id/tv_MaHP"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_thoiLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời lượng:"
+        app:layout_constraintTop_toBottomOf="@id/tv_MaHP"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

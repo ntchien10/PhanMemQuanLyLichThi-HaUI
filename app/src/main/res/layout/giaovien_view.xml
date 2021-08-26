@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_magv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã cán bộ: "
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_tengv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên cán bộ:"
+        app:layout_constraintTop_toBottomOf="@id/tv_magv"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_khoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khoa:"
+        app:layout_constraintTop_toBottomOf="@id/tv_tengv"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SĐT:"
+        app:layout_constraintTop_toBottomOf="@id/tv_khoa"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

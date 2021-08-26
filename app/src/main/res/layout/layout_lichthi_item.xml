@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tv_sapxep_item_BacDaoTao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bậc đào tạo: "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_Khoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khoa: "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_HocKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Học kỳ:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_BacDaoTao"
+        app:layout_constraintLeft_toLeftOf="@id/tv_sapxep_item_BacDaoTao"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_MaHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã HP:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_HocKy"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_TenHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên HP:"
+        app:layout_constraintTop_toTopOf="@id/tv_sapxep_item_MaHP"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_sapxep_item_phongthi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Thi:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_MaHP"
+        app:layout_constraintLeft_toLeftOf="@id/tv_sapxep_item_MaHP"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_CaThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ca thi:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_MaHP"
+        app:layout_constraintRight_toRightOf="@id/tv_sapxep_item_TenHP"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_NgayThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày thi:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_phongthi"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cán bộ 1:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_NgayThi"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/tv_sapxep_item_cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cán bộ 2:"
+        app:layout_constraintTop_toBottomOf="@id/tv_sapxep_item_cb1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

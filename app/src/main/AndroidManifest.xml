@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quanlylichthi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyLichThi">
+        <activity android:name=".ui.trangchu.TrangChuForUser"
+            android:label="Lịch thi"></activity>
+        <activity android:name=".ui.chonmonthi.SapXep"
+            android:label="Lịch thi"/>
+        <activity android:name=".ui.chonmonthi.ChonCanBoCoiThi"
+            android:label="Chọn cán bộ coi thi"/>
+        <activity android:name=".ui.chonmonthi.ChonPhongThi"
+            android:label="Chọn phòng thi"/>
+        <activity android:name=".ui.chonmonthi.ChonMonThi"
+            android:label="Chọn môn thi"/>
+        <activity android:name=".ui.trangchu.TrangChuController"
+            android:label="Phần mềm quản lý lịch thi"/>
+        <activity
+            android:name=".ui.login.LoginController"
+            android:label="Phần mềm quản lý lịch thi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name=".ui.chonmonthi.ChonMonThi"-->
+<!--            android:label="Phần mềm quản lý lịch thi BTL">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--                    android:name=".ui.taikhoan.TaiKhoanController"-->
+<!--                    android:label="Phần mềm quản lý lịch thi BTL">-->
+<!--                    <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                    </intent-filter>-->
+<!--                </activity>-->
+        <activity android:name=".ui.monthi.MonThiController"
+            android:label="Quản lý môn thi"></activity>
+        <activity android:name=".ui.monthi.ViewMonThi"
+            android:label="Danh sách môn thi"/>
+        <activity android:name=".ui.phongthi.PhongThiController"
+            android:label="Quản lý phòng thi"/>
+        <activity android:name=".ui.canbo.CanBoController"
+            android:label="Quản lý cán bộ coi thi"/>
+        <activity android:name=".ui.taikhoan.TaiKhoanController"
+            android:label="Quản lý tài khoản"/>
+        <activity android:name=".ui.taodotthi.DotThiController"
+            android:label="Quản lý đợt thi"/>
+        <activity android:name=".ui.taikhoan.DSUserActivity"
+            android:label="Danh sách tài khoản"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_ngaybd"
+            android:text="Ngày bđ:"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/item_ngaykt"
+            android:text="Ngày kt:"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+    </TableRow>
+    <TextView
+        android:id="@+id/item_tenphong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên phòng: "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/item_succhua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sức chứa: "
+        android:textSize="20sp"/>
+</LinearLayout>
